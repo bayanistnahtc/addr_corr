@@ -1,0 +1,6 @@
+{
+  "service": {
+    "triton": "host.docker.internal:8300",
+    "address_corrector": "http://localhost:8080"
+  }
+}

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  address_corrector:
+    build: 
+      context: ./
+      args:
+        CONFIG_DIR_IN_CONTAINER: ${CONFIG_DIR_IN_CONTAINER}
+        CONFIG_NAME: ${CONFIG_NAME}
+    ports:
+      - 8080:8080
+    volumes:
+      - ${APP_CONFIGS}:${CONFIG_DIR_IN_CONTAINER}
+
+networks:
+  triton_default:
+    external: true

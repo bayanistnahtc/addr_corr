@@ -1,0 +1,11 @@
+fastapi==0.115.8
+numpy==1.26.3
+opencv-python-headless==4.8.1.78
+prometheus-client==0.21.1
+pydantic==2.10.6
+python-multipart
+pydantic_settings
+starlette-exporter==0.23.0
+tenacity==9.1.2
+tritonclient==2.56.0
+uvicorn==0.34.0

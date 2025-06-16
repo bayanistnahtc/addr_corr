@@ -1,0 +1,11 @@
+[[source]]
+url = "https://repo.infranet.co/repository/pypi-all/simple/"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+assertpy = "==1.1"
+allure-pytest = "==2.13.3"
+maxitest = "==2.2.35"
+
+[dev-packages]

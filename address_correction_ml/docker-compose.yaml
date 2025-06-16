@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  address_corrector:
+    build: 
+      context: ./
+      args:
+        CONFIG_DIR_IN_CONTAINER: ${CONFIG_DIR_IN_CONTAINER}
+        TRITON_HOST: ${TRITON_HOST}
+        TRITON_PORT_GRPC: ${TRITON_PORT_GRPC}
+        TRITON_PORT_HTTP: ${TRITON_PORT_HTTP}
+    ports:
+      - 8080:8080
+    volumes:
+      - ${APP_CONFIGS}:${CONFIG_DIR_IN_CONTAINER}
